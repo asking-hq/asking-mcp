@@ -8,7 +8,7 @@
     "url": "https://asking.com.br"
   },
   "homepage": "https://docs.asking.com.br/hc/asking-documentation/articles/asking-conectar-assistentes-de-ia-via-mcp",
-  "repository": "https://github.com/askingbr/asking-mcp",
+  "repository": "https://github.com/asking-hq/asking-mcp",
   "license": "MIT",
   "keywords": ["mcp", "customer-support", "ai", "asking"]
 }
