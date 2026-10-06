@@ -10,12 +10,41 @@ etiquetas e responsável. Quando a conexão inclui o escopo de envio, ele també
 responde e inicia conversas em seu nome — sempre com consentimento por escopo,
 registro na auditoria e revogação imediata.
 
-## Configuração do servidor
+## Servidor
 
-- URL (Streamable HTTP): `https://app.asking.com.br/mcp`
-- Autenticação: OAuth com escopos `mcp:read`, `mcp:write` e `mcp:send`
+- **URL (Streamable HTTP):** `https://app.asking.com.br/mcp`
+- **Autenticação:** OAuth com escopos `mcp:read`, `mcp:write` e `mcp:send`
+
+## Como conectar
+
+O fluxo geral vale para qualquer cliente:
+
+1. Adicione um servidor MCP remoto com a URL acima.
+2. O navegador abre a página de consentimento do Asking — entre com sua conta de
+   sempre (e-mail ou Google).
+3. Se você participa de mais de uma conta, selecione a conta que quer conectar.
+4. Revise os escopos e aprove.
+
+Menus e nomes variam entre clientes e versões; procure a opção de adicionar um
+servidor MCP remoto ou um conector personalizado. Dependendo do cliente, a
+primeira chamada de ferramenta é o que abre o consentimento no navegador.
+
+### Claude
+
+Abra **Configurações > Conectores**, adicione um **conector personalizado** e
+cole `https://app.asking.com.br/mcp`. Conclua o consentimento no navegador.
+
+### ChatGPT
+
+Abra **Configurações > Conectores** e crie um **conector personalizado** com a
+URL. Conectores personalizados dependem do plano e da liberação gradual; se a
+opção não aparecer na sua conta, ainda não é possível conectar.
 
 ### Cursor
+
+Abra **Configurações > MCP**, adicione um novo servidor MCP, escolha a opção
+**HTTP** e cole a URL. Você também pode adicioná-lo em `~/.cursor/mcp.json` (ou
+`.cursor/mcp.json` no projeto):
 
 ```json
 {
@@ -27,9 +56,10 @@ registro na auditoria e revogação imediata.
 }
 ```
 
-Ou em **Settings > MCP > Add server** (HTTP) e cole a URL.
-
 ### VS Code
+
+Abra a Paleta de Comandos e execute **MCP: Add Server**, escolha **HTTP** e cole
+a URL. Você também pode adicioná-lo em `.vscode/mcp.json`:
 
 ```json
 {
@@ -42,14 +72,26 @@ Ou em **Settings > MCP > Add server** (HTTP) e cole a URL.
 }
 ```
 
-### Claude
+### Outros clientes
 
-**Settings > Connectors > Add custom connector** e cole
-`https://app.asking.com.br/mcp`.
+Qualquer cliente com suporte a **MCP remoto (Streamable HTTP)** funciona: use a
+URL `https://app.asking.com.br/mcp` e conclua o OAuth no navegador. Exemplo
+genérico de configuração:
+
+```json
+{
+  "mcpServers": {
+    "asking": {
+      "type": "streamable-http",
+      "url": "https://app.asking.com.br/mcp"
+    }
+  }
+}
+```
 
 ## Documentação
 
-Passo a passo completo e limites por plano:
+Passo a passo completo, escopos, segurança e limites por plano:
 <https://docs.asking.com.br/hc/asking-documentation/articles/asking-conectar-assistentes-de-ia-via-mcp>
 
 ## Licença
