@@ -71,6 +71,22 @@ cole a URL. Você também pode adicioná-lo em `.vscode/mcp.json`:
 }
 ```
 
+### Claude Code
+
+Adicione o servidor pelo terminal:
+
+```bash
+claude mcp add asking --transport http https://app.asking.com.br/mcp
+```
+
+### Codex
+
+Adicione o servidor pelo terminal:
+
+```bash
+codex mcp add asking --url https://app.asking.com.br/mcp
+```
+
 ### Outros clientes
 
 Qualquer cliente MCP com suporte ao transporte Streamable HTTP pode se conectar
