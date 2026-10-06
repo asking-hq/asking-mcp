@@ -1,6 +1,7 @@
 # Asking MCP
 
 **English** | [Português (BR)](./README.pt-BR.md)
+[![smithery badge](https://smithery.ai/badge/askinghq/asking-mcp)](https://smithery.ai/servers/askinghq/asking-mcp)
 
 Plugin that connects AI assistants (Claude, ChatGPT, Cursor, VS Code and other
 MCP-compatible clients) to your customer support in
