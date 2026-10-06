@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "asking",
+  "version": "1.0.0",
+  "description": "Connect AI assistants to Asking: read conversations, contacts and reports, and reply with scoped consent.",
+  "author": {
+    "name": "Asking",
+    "url": "https://asking.com.br"
+  },
+  "homepage": "https://docs.asking.com.br/hc/asking-documentation/articles/asking-conectar-assistentes-de-ia-via-mcp",
+  "repository": "https://github.com/askingbr/asking-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "customer-support", "ai", "asking"]
+}
