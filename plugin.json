@@ -19,7 +19,7 @@
         "shortDescription": "AI-assisted customer support",
         "longDescription": "Run customer support with Asking, the shared inbox for your team, directly from ChatGPT and Codex. Requires an Asking account.\n\nThis plugin connects your Asking workspace to your AI assistant so you can work on customer conversations without switching apps:\n\n- Search conversations, messages, contacts, and Help Center articles in one place.\n- Read a conversation with its full message history and contact details.\n- Draft replies for review, add private notes, and update status, priority, labels, and assignee.\n- Create and update Help Center articles.\n- Check report metrics for your account.\n\nIt is designed for support and customer success teams that use Asking and want help triaging, summarizing, and answering customer conversations.\n\nPermissions and safety: every request runs with the permissions of the connected user. Read tools are available immediately; drafting, updating, and sending require the scopes you approve during connection. Sending a reply or starting a new conversation delivers a real message to the customer and requires the explicit send scope, which you can grant or revoke at any time.\n\nLimitations: the plugin cannot delete data, does not run bulk operations, and only sees the Asking account that authorized the connection.",
         "developerName": "Asking",
-        "category": "Productivity",
+        "category": "Communication",
         "capabilities": [
           "Search conversations, messages, contacts, and articles",
           "Read conversation history and contact details",
